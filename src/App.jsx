@@ -91,7 +91,7 @@ function changeQuantity(id, size, amount) {
           <div className="hero-content">
             <span className="eyebrow">ALBANIAN STREETWEAR / 2026</span>
             <h1>DOUBLEHEADED.</h1>
-            <p className="hero-tagline">Rooted in heritage. Made to be worn.</p>
+            <p className="hero-tagline">Rooted in heritage. Made to be worn. Made for everyone.</p>
             <a href="#collection" className="shop-link">
               Explore Collection ↗
             </a>
