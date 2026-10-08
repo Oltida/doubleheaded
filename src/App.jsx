@@ -20,7 +20,7 @@ function App() {
   ${product.name}
   ${product.color}
   ${product.category}
-  ${product.category === 'T-Shirts' ? 'tshirt tshirts t-shirt shirt tee' : ''}
+  ${product.category === 'T-Shirts' ? 'tshirt tshirts t-shirt top shirt tee' : ''}
   ${product.category === 'Pants' ? 'sweatpants joggers trousers bottoms' : ''}
   ${product.category === 'Sets' ? 'hoodie tracksuit matching set outfit flare' : ''}
   ${product.category === 'Caps' ? 'hat baseball cap' : ''}

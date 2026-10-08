@@ -1,6 +1,4 @@
 
-/* NAVIGATION */
-
 .size-section {
   margin-top: 18px;
 }
@@ -79,16 +77,20 @@
   font-size: 11px;
 }
 
-/* HERO */
 
 .hero-section {
-  min-height: 440px;
+  min-height: 470px;
   position: relative;
   display: flex;
   align-items: center;
   padding: 65px 8%;
-  background: #202020;
   color: white;
+  background:
+    linear-gradient(rgba(15, 15, 15, 0.62), rgba(15, 15, 15, 0.62)),
+    url('/images/albania-hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -581,4 +583,48 @@
 .cart-count {
   background-color: #b51f28;
   color: white;
+}
+
+/* Subtle red accents */
+
+.shop-link {
+  background-color: #b51f28;
+  color: white;
+}
+
+.shop-link:hover {
+  background-color: #921820;
+}
+
+/* Add to Cart hover */
+.add-button:hover {
+  background-color: #b51f28;
+  border-color: #b51f28;
+  color: white;
+}
+
+/* Cart number */
+.cart-count {
+  background-color: #b51f28;
+}
+
+/* Selected category */
+.category-filters button.active {
+  background-color: #b51f28;
+  border-color: #b51f28;
+  color: white;
+}
+/* Limited edition navbar label */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.limited-label {
+  color: #b51f28;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }

@@ -4,8 +4,9 @@ function Navbar({ cartCount, onOpenCart }) {
     <header className="navbar">
       <a className="brand" href="#home">DOUBLEHEADED.</a>
 
-      <nav>
-        <a href="#collection">Shop Collection</a>
+      <nav className="nav-links">
+      <a href="#collection">Shop Collection</a>
+      <span className="limited-label">LIMITED EDITION</span>
       </nav>
 
       <button className="cart-trigger" onClick={onOpenCart}>
