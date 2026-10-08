@@ -14,7 +14,8 @@ const products = [
 
   { id: 10, name: "Eagle Cap", category: "Caps", color: "Black", price: 25, image: "/images/black-cap.png" },
   { id: 11, name: "Eagle Cap", category: "Caps", color: "White", price: 25, image: "/images/white-cap.png" },
-
+  { id: 14, name: "Eagle Cap", category: "Caps", color: "Red", price: 25, image: "/images/red-cap.png"},
+  
   { id: 12, name: "Double Eagle Chain", category: "Accessories", color: "Silver", price: 35, image: "/images/silver-chain.png" },
   { id: 13, name: "Double Eagle Chain", category: "Accessories", color: "Gold", price: 35, image: "/images/gold-chain.png" }
 ]
