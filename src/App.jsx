@@ -30,41 +30,45 @@ function App() {
     0
   )
 
-  function addToCart(product) {
-    setCart((currentCart) => {
-      const existingItem = currentCart.find(
-        (item) => item.id === product.id
+
+function addToCart(product, size) {
+  setCart((currentCart) => {
+    const existingItem = currentCart.find(
+      (item) => item.id === product.id && item.size === size
+    )
+
+    if (existingItem) {
+      return currentCart.map((item) =>
+        item.id === product.id && item.size === size
+          ? { ...item, quantity: item.quantity + 1 }
+          : item
       )
+    }
 
-      if (existingItem) {
-        return currentCart.map((item) =>
-          item.id === product.id
-            ? { ...item, quantity: item.quantity + 1 }
-            : item
-        )
-      }
+    return [...currentCart, { ...product, size, quantity: 1 }]
+  })
+}
 
-      return [...currentCart, { ...product, quantity: 1 }]
-    })
-  }
 
-  function removeFromCart(id) {
-    setCart((currentCart) =>
-      currentCart.filter((item) => item.id !== id)
+function removeFromCart(id, size) {
+  setCart((currentCart) =>
+    currentCart.filter(
+      (item) => !(item.id === id && item.size === size)
     )
-  }
+  )
+}
 
-  function changeQuantity(id, amount) {
-    setCart((currentCart) =>
-      currentCart
-        .map((item) =>
-          item.id === id
-            ? { ...item, quantity: item.quantity + amount }
-            : item
-        )
-        .filter((item) => item.quantity > 0)
-    )
-  }
+function changeQuantity(id, size, amount) {
+  setCart((currentCart) =>
+    currentCart
+      .map((item) =>
+        item.id === id && item.size === size
+          ? { ...item, quantity: item.quantity + amount }
+          : item
+      )
+      .filter((item) => item.quantity > 0)
+  )
+}
 
   return (
     <div className="app" id="home">

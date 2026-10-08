@@ -1,6 +1,37 @@
 
 /* NAVIGATION */
 
+.size-section {
+  margin-top: 18px;
+}
+
+.size-section p {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.size-options {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.size-options button {
+  width: 38px;
+  height: 36px;
+  border: 1px solid #ccc;
+  background: transparent;
+  font-size: 11px;
+}
+
+.size-options button.selected,
+.size-options button:hover {
+  background: #171717;
+  color: white;
+  border-color: #171717;
+}
+
 .navbar {
   height: 82px;
   padding: 0 6%;
@@ -522,4 +553,10 @@
   .category-filters button {
     white-space: nowrap;
   }
+}
+
+.size-error {
+  color: #b3261e;
+  font-size: 12px;
+  margin-top: 10px;
 }
