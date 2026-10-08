@@ -31,7 +31,7 @@
 }
 
 .navbar {
-  height: 82px;
+  height: 60px;
   padding: 0 6%;
   display: flex;
   align-items: center;
@@ -77,9 +77,8 @@
   font-size: 11px;
 }
 
-
 .hero-section {
-  min-height: 470px;
+  min-height: 575px;
   position: relative;
   display: flex;
   align-items: center;
@@ -87,7 +86,7 @@
   color: white;
   background:
     linear-gradient(rgba(15, 15, 15, 0.62), rgba(15, 15, 15, 0.62)),
-    url('/images/albania-hero.png');
+    url('/images/albanian-hero1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -479,7 +478,7 @@
 @media (max-width: 600px) {
   .navbar {
     padding: 0 5%;
-    height: 68px;
+    height: 58px;
   }
 
   .brand {
@@ -585,7 +584,6 @@
   color: white;
 }
 
-/* Subtle red accents */
 
 .shop-link {
   background-color: #b51f28;
@@ -630,10 +628,10 @@
 }
 
 .hero-section h1 {
-  color: rgba(255, 255, 255, 0.30);
+  color: rgba(255, 255, 255, 0.50);
 }
 .shop-link {
-  background-color: rgba(181, 31, 40, 0.50);
+  background-color: rgba(181, 31, 40, 0.60);
   color: white;
 }
 
