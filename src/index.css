@@ -13,8 +13,7 @@ body {
   margin: 0;
   font-family: 'DM Sans', Arial, sans-serif;
   color: #171717;
-  background: #f7f7f5;
-}
+  background: #e8e7e4;
 
 button,
 input {
@@ -37,4 +36,5 @@ img {
 
 #root {
   min-height: 100vh;
+}
 }

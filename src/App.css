@@ -628,3 +628,19 @@
   font-weight: 700;
   letter-spacing: 1px;
 }
+
+.hero-section h1 {
+  color: rgba(255, 255, 255, 0.30);
+}
+.shop-link {
+  background-color: rgba(181, 31, 40, 0.50);
+  color: white;
+}
+
+.shop-link:hover {
+  background-color: rgba(181, 31, 40, 0.9);
+}
+.navbar,
+.cart-panel {
+  background-color: #e8e7e4;
+}
