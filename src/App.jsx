@@ -16,7 +16,16 @@ function App() {
 
   // Filter products based on the search and category
   const filteredProducts = products.filter((product) => {
-    const searchText = `${product.name} ${product.color} ${product.category}`.toLowerCase()
+    const searchText = `
+  ${product.name}
+  ${product.color}
+  ${product.category}
+  ${product.category === 'T-Shirts' ? 'tshirt tshirts t-shirt shirt tee' : ''}
+  ${product.category === 'Pants' ? 'sweatpants joggers trousers bottoms' : ''}
+  ${product.category === 'Sets' ? 'hoodie tracksuit matching set outfit flare' : ''}
+  ${product.category === 'Caps' ? 'hat baseball cap' : ''}
+  ${product.category === 'Accessories' ? 'necklace chain pendant jewelry eagle' : ''}
+`.toLowerCase()
     const matchesSearch = searchText.includes(search.toLowerCase().trim())
     const matchesCategory = selectedCategory === 'All' ||
       product.category === selectedCategory
